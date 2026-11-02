@@ -399,9 +399,11 @@ section {
     width: 33.333% !important;
     max-width: 33.333% !important;
     min-width: 0 !important;
-    padding: 1rem 1.5rem 1rem 1.5rem;
+    padding-left: 2rem;
     background: #333438 !important;
     color: #ffffff !important;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
   }
 
   .sidebar,
@@ -499,7 +501,7 @@ section {
     width: 66.666% !important;
     max-width: 66.666% !important;
     min-width: 0 !important;
-    padding: 8pt 14pt 8pt 14pt;
+    padding: 1rem 2rem 1rem 1rem;
     background: #ffffff !important;
     overflow: visible !important;
   }
@@ -566,12 +568,6 @@ section {
     padding: 1pt 0 4pt 0;
     color: #6d6d6d !important;
     font-weight: bold;
-  }
-
-  .section-work .item .company .location {
-    font-weight: normal;
-    color: #929292 !important;
-    font-size: 0.92em;
   }
 
   .section-work .item .summary,
@@ -664,14 +660,19 @@ section {
     text-align: justify;
   }
 
+  .section-languages {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
   .section-languages .item .language {
     font-weight: bold;
-    color: #333438 !important;
+    color: #ffffff !important;
   }
 
   .section-languages .item .fluency {
     font-weight: normal;
-    color: #929292 !important;
+    color: #d5d5d5 !important;
   }
 
   .section-interests .title {
