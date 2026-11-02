@@ -400,8 +400,8 @@ section {
     max-width: 33.333% !important;
     min-width: 0 !important;
     padding-left: 2rem;
-    background: #333438 !important;
-    color: #ffffff !important;
+    background: transparent !important;
+    color: #333438 !important;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
   }
@@ -409,7 +409,7 @@ section {
   .sidebar,
   .sidebar h1,
   .sidebar h2 {
-    color: #ffffff !important;
+    color: #333438 !important;
   }
 
   .sidebar h2 {
@@ -419,11 +419,11 @@ section {
     letter-spacing: 0.2rem;
     font-weight: bold;
     margin-top: 5rem;
-    color: #ffffff !important;
+    color: #333438 !important;
   }
 
   .sidebar h2.title span {
-    color: #ffffff !important;
+    color: #333438 !important;
   }
 
   .avatar {
@@ -437,27 +437,27 @@ section {
 
   .section-education .item {
     margin-bottom: 0;
-    color: #ffffff !important;
+    color: #333438 !important;
   }
 
   .section-education .studyTitle span {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.1rem;
-    color: #ffffff !important;
+    color: #333438 !important;
   }
 
   .section-education .studyTitle span.badge {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1rem;
-    color: #ffffff !important;
-    background: #939393 !important;
+    color: #333438 !important;
+    background: transparent !important;
   }
 
   .section-education .courses {
     font-size: 1.1rem;
-    color: #ffffff !important;
+    color: #333438 !important;
   }
 
   .section-education ul.courses {
@@ -468,23 +468,23 @@ section {
 
   .section-education .ul.courses li {
     margin: 0;
-    color: #ffffff !important;
+    color: #333438 !important;
   }
 
   .section-education .institution {
     font-size: 1rem;
-    color: #ffffff !important;
+    color: #333438 !important;
   }
 
   .section-education .date span {
     font-size: 1rem;
-    color: #ffffff !important;
+    color: #333438 !important;
   }
 
   .section-education .note {
     font-size: 0.9rem;
     font-style: italic;
-    color: #c9c9c9 !important;
+    color: #929292 !important;
     padding: 2pt 1ex 0 1ex;
   }
 
@@ -492,7 +492,7 @@ section {
   .sidebar a:hover,
   .sidebar a:visited {
     text-decoration: none;
-    color: #ffffff !important;
+    color: #333438 !important;
   }
 
   /* Content */
@@ -667,12 +667,12 @@ section {
 
   .section-languages .item .language {
     font-weight: bold;
-    color: #ffffff !important;
+    color: #333438 !important;
   }
 
   .section-languages .item .fluency {
     font-weight: normal;
-    color: #d5d5d5 !important;
+    color: #929292 !important;
   }
 
   .section-interests .title {
@@ -689,17 +689,17 @@ section {
   }
 
   .section-skills .item .name {
-    color: #ffffff !important;
+    color: #333438 !important;
   }
 
   .section-skills .item .keywords .span {
-    color: #ffffff !important;
-    background: #929292 !important;
+    color: #333438 !important;
+    background: transparent !important;
   }
 
   .section-skills .keywords span.label {
-    color: #000 !important;
-    background: #929292 !important;
+    color: #333438 !important;
+    background: transparent !important;
     line-height: 2.1rem;
     font-weight: 400;
     font-size: 80%;
@@ -707,7 +707,7 @@ section {
 
   .section-contact .fa {
     padding: 0.5rem 0 0 0;
-    background: #ffffff !important;
+    background: transparent !important;
     color: #333438 !important;
     border-radius: 100rem;
     width: 2.2rem;
@@ -725,19 +725,19 @@ section {
 
   .section-contact ul.contact li {
     margin: 0;
-    color: #ffffff !important;
+    color: #333438 !important;
   }
 
   .section-contact ul.profiles li {
     margin: 0;
-    color: #ffffff !important;
+    color: #333438 !important;
   }
 
   .section-contact ul.contact li span,
   .section-contact ul.profiles li span {
     word-wrap: break-word;
     white-space: pre-wrap;
-    color: #ffffff !important;
+    color: #333438 !important;
   }
 
   /* Keep headings with the block that follows, and don't slice a

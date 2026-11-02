@@ -77,12 +77,10 @@ function render(resume) {
   });
 }
 
-module.exports = {
-  render: render,
-  pdfRenderOptions: {
-    format: 'Legal',
-    printBackground: true,
-    preferCSSPageSize: true,
-    displayHeaderFooter: false,
-  },
+exports.render = render;
+exports.pdfRenderOptions = {
+  format: 'Legal',
+  printBackground: false,
+  preferCSSPageSize: true,
+  displayHeaderFooter: false,
 };
