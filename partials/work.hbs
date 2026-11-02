@@ -56,6 +56,59 @@
 			{{/each}}
 		</ul>
 		{{/if}}
+		{{!-- Optional extension: nested engagements (e.g. several clients under one employer) --}}
+		{{#if engagements.length}}
+		<div class="engagements">
+			{{#each engagements}}
+			<div class="engagement">
+				<div class="engagement-header">
+					<span class="client">{{name}}</span>
+					{{#if position}}
+					<span class="engagement-position">
+						| {{position}}
+					</span>
+					{{/if}}
+					<span class="date">
+						{{#if startDate}}
+						|
+						<span class="startDate">
+							{{formatDate startDate}}
+						</span>
+						{{/if}}
+						{{#if endDate}}
+						<span class="endDate">
+							- {{formatDate endDate}}
+						</span>
+						{{else}}
+						<span class="endDate">
+							- Present
+						</span>
+						{{/if}}
+						{{#if startDate}}
+						{{#if endDate}}
+						<span class="diffDate">
+							({{dateDiff startDate endDate}})
+						</span>
+						{{/if}}
+						{{/if}}
+					</span>
+				</div>
+				{{#if summary}}
+				<div class="summary">
+					<p>{{summary}}</p>
+				</div>
+				{{/if}}
+				{{#if highlights.length}}
+				<ul class="highlights">
+					{{#each highlights}}
+					<li>{{.}}</li>
+					{{/each}}
+				</ul>
+				{{/if}}
+			</div>
+			{{/each}}
+		</div>
+		{{/if}}
 	</div>
 	{{/each}}
 </section>

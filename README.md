@@ -8,13 +8,11 @@ npm i -g ./jsonresume-theme-papirus-erujazz
 resumed render -o resume.html -t jsonresume-theme-papirus-erujazz
 ```
 
------------
-
+---
 
 # Papirus theme [![](https://badge.fury.io/js/jsonresume-theme-papirus.svg)](https://www.npmjs.org/package/jsonresume-theme-papirus)
 
 This is the papirus theme for [JSON Resume](http://jsonresume.org/).
-
 
 ![Preview of papirus theme](https://raw.githubusercontent.com/konalexiou/jsonresume-theme-papirus/master/papirus.png)
 
@@ -32,6 +30,7 @@ sudo apt-get install nodejs-legacy npm
 ```
 
 Or if you're on OSX and got [Homebrew](http://brew.sh/) installed:
+
 ```
 brew install node
 ```
@@ -49,6 +48,7 @@ sudo npm install -g resume-cli
 ### Install theme
 
 Install the theme by typing
+
 ```bash
 npm install -g jsonresume-theme-papirus
 ```

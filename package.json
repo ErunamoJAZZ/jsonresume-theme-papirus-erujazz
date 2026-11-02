@@ -1,24 +1,36 @@
 {
   "name": "jsonresume-theme-papirus-erujazz",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Papirus theme for JSON Resume",
-  "author": "Konstantinos Alexiou",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ErunamoJAZZ/jsonresume-theme-papirus"
-  },
   "keywords": [
     "jsonresume",
     "jsonresume-theme",
     "jsonresume-theme-papirus",
-    "papirus",
-    "konalexiou"
+    "konalexiou",
+    "papirus"
   ],
   "license": "MIT",
+  "author": "Konstantinos Alexiou",
+  "contributors": [
+    "C. Daniel Sanchez"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ErunamoJAZZ/jsonresume-theme-papirus"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "format": "oxfmt --write ."
+  },
   "dependencies": {
-    "handlebars": "^4.7.8",
-    "html-pdf": "^3.0.1",
-    "moment": "^2.30.0",
+    "handlebars": "^4.7.10",
+    "moment": "^2.31.0",
     "pluralize": "^8.0.0"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.75.0"
+  },
+  "engines": {
+    "node": ">=24.0.0"
   }
 }
