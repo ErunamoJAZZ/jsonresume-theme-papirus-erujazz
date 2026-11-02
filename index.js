@@ -34,6 +34,17 @@ function render(resume) {
       str = str.replace(/\//g, '/ ');
       return str.replace('/ / ', '//');
     },
+    // Prefer a break after "/", never at "-". Chrome otherwise wraps
+    // the LinkedIn URL at the hyphen and drops it below the icon.
+    breakUrl: function (str) {
+      if (typeof str !== 'string') {
+        return '';
+      }
+      const html = Handlebars.escapeExpression(str)
+        .replace(/\//g, '/\u200B')
+        .replace(/-/g, '\u2011');
+      return new Handlebars.SafeString(html);
+    },
     dateDiff: function (startDate, endDate) {
       let text = '';
       startDate = moment(startDate);
