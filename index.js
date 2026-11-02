@@ -79,4 +79,10 @@ function render(resume) {
 
 module.exports = {
   render: render,
+  pdfRenderOptions: {
+    format: 'Legal',
+    printBackground: true,
+    preferCSSPageSize: true,
+    displayHeaderFooter: false,
+  },
 };

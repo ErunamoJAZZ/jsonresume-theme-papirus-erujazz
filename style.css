@@ -334,11 +334,16 @@ section {
 }
 
 /* Print */
+@page {
+  size: legal;
+  margin: 0.55in 0.45in 0.6in 0.45in;
+}
+
 @media print {
   body {
     /* font: 10pt 'BabelSans'; */
     font: 10pt 'Fira Sans Extra Condensed';
-    line-height: 1;
+    line-height: 1.25;
     color: #929292 !important;
   }
   a[href]:after {
@@ -352,7 +357,7 @@ section {
   }
 
   #resume {
-    overflow: hidden;
+    overflow: visible !important;
     border: none !important;
     display: flex !important;
     flex-direction: row !important;
@@ -485,7 +490,7 @@ section {
     min-width: 0 !important;
     padding: 1rem 2rem 1rem 1rem;
     background: #ffffff !important;
-    overflow: hidden !important;
+    overflow: visible !important;
   }
 
   .content h1 {
@@ -715,5 +720,41 @@ section {
     word-wrap: break-word;
     white-space: pre-wrap;
     color: #ffffff !important;
+  }
+
+  /* Keep headings with the block that follows, and don't slice a
+     bullet, skill group, or client engagement across pages. */
+  h1,
+  h2,
+  h3,
+  .position,
+  .company,
+  .engagement-header,
+  [class^='section-'] > .title {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .section-summary,
+  .section-education .item,
+  .section-languages .item,
+  .section-skills .item,
+  .section-contact li,
+  .section-work .engagement,
+  .section-work .item:not(:has(.engagements)),
+  .section-work .summary,
+  .section-work .highlights li,
+  p,
+  li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
   }
 }
