@@ -154,6 +154,12 @@ section {
   margin-top: 5rem;
 }
 
+.section-summary h2,
+.section-work h2 {
+  text-align: center;
+  padding-left: 0.5rem;
+}
+
 .content a:link,
 .content a:hover,
 .content a:visited {
@@ -526,6 +532,16 @@ section {
     letter-spacing: 0.3rem;
     font-weight: bold;
     margin-top: 2rem;
+  }
+
+  .section-summary h2,
+  .section-work h2 {
+    text-align: center;
+    padding-left: 0.3rem;
+  }
+
+  .section-work > .title {
+    margin-top: 14pt;
   }
 
   .content a:link,
