@@ -196,6 +196,12 @@ section {
   font-weight: bold;
 }
 
+.section-work .item .company .location {
+  font-weight: normal;
+  color: #929292;
+  font-size: 0.92em;
+}
+
 .section-work .item .engagements {
   margin-top: 1rem;
   padding-left: 1rem;
@@ -364,6 +370,11 @@ section {
     flex-wrap: nowrap !important;
     align-items: flex-start !important;
     width: 100% !important;
+    /* Bootstrap .row uses negative margins that cancel .container
+       padding. Print sets that padding to 0, so the row would stick
+       into the page margin and the printer clips the first letters. */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   #resume:before,
@@ -388,7 +399,7 @@ section {
     width: 33.333% !important;
     max-width: 33.333% !important;
     min-width: 0 !important;
-    padding-left: 2rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
     background: #333438 !important;
     color: #ffffff !important;
   }
@@ -488,7 +499,7 @@ section {
     width: 66.666% !important;
     max-width: 66.666% !important;
     min-width: 0 !important;
-    padding: 1rem 2rem 1rem 1rem;
+    padding: 8pt 14pt 8pt 14pt;
     background: #ffffff !important;
     overflow: visible !important;
   }
@@ -555,6 +566,12 @@ section {
     padding: 1pt 0 4pt 0;
     color: #6d6d6d !important;
     font-weight: bold;
+  }
+
+  .section-work .item .company .location {
+    font-weight: normal;
+    color: #929292 !important;
+    font-size: 0.92em;
   }
 
   .section-work .item .summary,

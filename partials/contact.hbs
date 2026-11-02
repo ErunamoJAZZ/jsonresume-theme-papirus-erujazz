@@ -5,11 +5,7 @@
             {{#if resume.basics.location}}
                 <li class="icon-item clearfix">
                     <i class="fa fa-map-marker"></i>
-                    {{resume.basics.location.address}}
-                        {{resume.basics.location.postalCode}}
-                        {{resume.basics.location.city}}
-                        {{resume.basics.location.region}}
-                        {{resume.basics.location.countryCode}}
+                    {{#if resume.basics.location.address}}{{resume.basics.location.address}}, {{/if}}{{#if resume.basics.location.postalCode}}{{resume.basics.location.postalCode}} {{/if}}{{resume.basics.location.city}}{{#if resume.basics.location.region}}, {{resume.basics.location.region}}{{else}}{{#if resume.basics.location.countryCode}}, {{resume.basics.location.countryCode}}{{/if}}{{/if}}
                 </li>
             {{/if}}
             {{#if resume.basics.email}}
